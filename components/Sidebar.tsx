@@ -33,7 +33,7 @@ const Sidebar = ({ sideIsOpen, handleSide }: NavbarProps) => {
 
                   return (
                       <li key={id} >
-                          <Link href={path} onClick={handleSide} className={`pb-1 border-b-[2px] block capitalize text-xl ${pathname === path && 'text-[#F29C33] border-b-[#F29C33]'} transition-all ease-in-out duration-150 hover:pl-2`}>
+                          <Link href={path} onClick={handleSide} className={`pb-1 border-b-[2px] block font-bold capitalize text-xl ${pathname === path && 'text-[#F29C33] border-b-[#F29C33]'} transition-all ease-in-out duration-150 hover:pl-2`}>
                             {title}
                           </Link>
                       </li>
