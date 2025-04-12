@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 
 const Header = () => {
-    const [sideIsOpen, setSideIsOpen] = useState(true)
+    const [sideIsOpen, setSideIsOpen] = useState(false)
 
     const handleSide = () => {
         setSideIsOpen((prev) => !prev)

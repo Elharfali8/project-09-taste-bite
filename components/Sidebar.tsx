@@ -16,7 +16,7 @@ const Sidebar = ({ sideIsOpen, handleSide }: NavbarProps) => {
 
   return (
       <aside className={`bg-[#262522] text-white p-8
-        ${sideIsOpen ? 'lg:hidden fixed right-0 left-0 bottom-0 top-0 light-blue-bg-color translate-x-0 transition-all ease-in-out duration-150 ' : 'lg:hidden fixed right-0 left-0 bottom-0 top-0 light-blue-bg-color translate-x-[-100%] transition-all ease-in-out duration-150 '}
+        ${sideIsOpen ? 'lg:hidden fixed right-0 left-0 bottom-0 top-0 light-blue-bg-color translate-x-0 transition-all ease-in-out duration-150  z-[99] ' : 'lg:hidden fixed right-0 left-0 bottom-0 top-0 light-blue-bg-color translate-x-[-100%] transition-all ease-in-out duration-150 z-0'}
         `}>
           <div className='flex items-center justify-between'>
               <Link href='/' onClick={handleSide} className='text-2xl font-bold'>
