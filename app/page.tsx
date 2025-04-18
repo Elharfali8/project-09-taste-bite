@@ -1,6 +1,7 @@
 import AboutUs from '@/components/AboutUs'
 import Categories from '@/components/Categories'
 import Explore from '@/components/Explore'
+import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Subscribe from '@/components/Subscribe'
 import React from 'react'
