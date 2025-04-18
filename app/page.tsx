@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs'
 import Categories from '@/components/Categories'
 import Explore from '@/components/Explore'
 import Hero from '@/components/Hero'
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Explore />
       <Categories />
+      <AboutUs />
     </main>
   )
 }

@@ -16,7 +16,7 @@ const Navbar = ({ handleSide }: NavbarProps) => {
     const pathname = usePathname()
 
   return (
-      <nav className='w-full grid place-items-center py-2 lg:py-4 px-2 lg:px-0'>
+      <nav className='w-full  grid place-items-center py-2 lg:py-4 px-2 lg:px-0'>
           <div className="container main-container h-[70px] w-full flex justify-between items-center border-[1px] border-[#9F9C95] rounded-full" >
               
               <Link href='/' className='lg:pl-2 font-extrabold text-xl md:text-2xl lg:text-3xl'>
