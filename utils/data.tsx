@@ -5,7 +5,8 @@ type Prop = {
     id: number,
     name: string,
     desc: string,
-    img: StaticImageData
+    img: StaticImageData,
+    dishTypes: string[],
 }
 
 type CategoryBtn = {
@@ -19,25 +20,49 @@ export const categoriesData: Prop[] = [
         id: 1,
         name: 'Savory Herb-Infused Chicken',
         desc: 'Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken',
-        img: chicken
+        img: chicken,
+        dishTypes: [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+    ],
     },
     {
         id: 2,
         name: 'Savory Herb-Infused Chicken',
         desc: 'Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken',
-        img: chicken
+        img: chicken,
+        dishTypes: [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+    ],
     },
     {
         id: 3,
         name: 'Savory Herb-Infused Chicken',
         desc: 'Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken',
-        img: chicken
+        img: chicken,
+        dishTypes: [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+    ],
     },
     {
         id: 4,
         name: 'Savory Herb-Infused Chicken',
         desc: 'Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken',
-        img: chicken
+        img: chicken,
+        dishTypes: [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+    ],
     },
 ]
 

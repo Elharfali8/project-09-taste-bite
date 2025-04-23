@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-const BreadCrumbs = ({title, id, page}: {title:string, id:string, page:boolean}) => {
+type Props = {
+  title: string
+  id?: string
+  page?: boolean
+}
+
+const BreadCrumbs = ({title, id, page}: Props) => {
   return (
     <div className='flex items-center gap-x-2 mb-2 lg:mb-4'>
       <Link href='/' className='text-gray-600 md:text-lg lg:text-xl hover:text-black'>Home</Link>
