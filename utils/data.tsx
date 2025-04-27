@@ -1,5 +1,10 @@
 import chicken from '@/public/assets/chicken.png'
 import { StaticImageData } from 'next/image'
+type CategoryBtn = {
+    id: number,
+    name: string,
+    query: string
+}
 
 type Prop = {
     id: number,
@@ -7,13 +12,10 @@ type Prop = {
     desc: string,
     img: StaticImageData,
     dishTypes: string[],
+    readyInMinutes?: number,
+    sourceUrl?: string,
 }
 
-type CategoryBtn = {
-    id: number,
-    name: string,
-    query: string
-}
 
 export const categoriesData: Prop[] = [
     {
@@ -27,6 +29,8 @@ export const categoriesData: Prop[] = [
         "main dish",
         "dinner"
     ],
+    readyInMinutes: 30,
+    sourceUrl: 'https://www.example.com/recipe1'
     },
     {
         id: 2,
@@ -39,6 +43,8 @@ export const categoriesData: Prop[] = [
         "main dish",
         "dinner"
     ],
+    readyInMinutes: 30,
+    sourceUrl: 'https://www.example.com/recipe1'
     },
     {
         id: 3,
@@ -51,6 +57,8 @@ export const categoriesData: Prop[] = [
         "main dish",
         "dinner"
     ],
+    readyInMinutes: 30,
+    sourceUrl: 'https://www.example.com/recipe1'
     },
     {
         id: 4,
@@ -63,6 +71,8 @@ export const categoriesData: Prop[] = [
         "main dish",
         "dinner"
     ],
+    readyInMinutes: 30,
+    sourceUrl: 'https://www.example.com/recipe1'
     },
 ]
 

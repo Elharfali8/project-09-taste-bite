@@ -3,6 +3,7 @@
 import BreadCrumbs from '@/components/BreadCrumbs'
 import { categoriesData } from '@/utils/data'
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import React from 'react'
 
@@ -13,6 +14,8 @@ type Prop = {
     img: StaticImageData,
   ingredients?: [],
   dishTypes?: string[],
+  readyInMinutes?: number,
+  sourceUrl?: string,
 }
 
 const SingleRecipePage = () => {
@@ -22,6 +25,8 @@ const SingleRecipePage = () => {
 
   const recipe: Prop | undefined =  categoriesData.find((item) => item.id === recipeId)
 
+  console.log(recipe?.sourceUrl);
+  
   
 
   if (!recipe) {
@@ -47,6 +52,17 @@ const SingleRecipePage = () => {
           <div>
             <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>{recipe?.name}</h1>
             <p className='text-gray-500 mt-2 md:text-lg lg:text-xl'>{recipe?.desc}</p>
+            <div className='flex items-center gap-2 mt-2'>
+              <span className='text-sm font-semibold text-gray-700'>Source:</span>
+              {recipe?.sourceUrl && (
+                <Link href={recipe?.sourceUrl}  className='text-blue-500 hover:underline'>{recipe?.sourceUrl}</Link>
+              )}
+            </div>
+            <div className='my-4'>
+              <span className='text-sm  font-semibold text-gray-700'>Ready in:</span>
+              <span className='lg:text-lg font-semibold text-red-600 ml-2'>{recipe?.readyInMinutes} minutes</span>
+
+            </div>
             <div className='my-4'>
               <span className='text-sm font-semibold text-gray-700'>Dish Types:</span>
               <div className='flex flex-wrap gap-2 mt-2'>
